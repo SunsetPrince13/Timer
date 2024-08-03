@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="time">
+            <span class="real_time_info"></span>
+            <br>
+            <span class="real_time_hr">00</span>
+            :
+            <span class="real_time_min">00</span>
+        </div>
+        <div class="setTime">
+            <h1>Set the time</h1>
+            Hour : <input type="number" id="hourSet" placeholder="Hours..." value="0" min="0" max="99"><br>
+            Minute : <input type="number" id="minSet" placeholder="Minutes..." value="0" min="0" max="59"><br>
+            Second : <input type="number" id="secSet" placeholder="Seconds..." value="0" min="0" max="59"><br>
+            <button class="apply">Apply</button>
+        </div>
+        <button class="time_button">Set time</button>
+        <button class="stopwatch">Stopwatch</button>
+        <button class="current_time">Current time</button>
+        <div class="container">
+            <span class="hr">00</span>
+            <span class="colon">:</span>
+            <span class="min">00</span>
+            <span class="colon">:</span>
+            <span class="sec">00</span>
+            <span class="milisec-colon">:</span>
+            <span class="millisec">00</span>
+            <span class="am-pm">am</span>
+        </div>
+        <button class="action_btn" id="start">Start</button>
+        <button class="action_btn"  id="stop">Stop</button>
+        <button class="action_btn"  id="reset">Reset</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
